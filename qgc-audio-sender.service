@@ -6,7 +6,7 @@ Wants=mediamtx.service
 [Service]
 Type=simple
 ExecStart=/home/raspberry/qgc-audio-sender/send-audio.sh
-Restart=on-failure
+Restart=always
 RestartSec=5
 Environment=MEDIAMTX_URL=rtsp://localhost:8554/audio
 Environment=BITRATE=64000
