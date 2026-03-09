@@ -8,7 +8,6 @@ Type=simple
 ExecStart=/home/raspberry/qgc-audio-sender/send-audio.sh
 Restart=on-failure
 RestartSec=5
-Environment=AUDIO_DEVICE=plughw:2,0
 Environment=MEDIAMTX_URL=rtsp://localhost:8554/audio
 Environment=BITRATE=64000
 
